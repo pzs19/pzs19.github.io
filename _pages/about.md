@@ -29,13 +29,13 @@ His researches focus on AI for science, drug discovery, and geometric deep learn
 # 🔥 News
 - *2023.10*: &nbsp;🎉🎉 One paper accepted by EMNLP 2023. Thanks for all colleborators!
 - *2023.10*: &nbsp;🎉🎉 One paper accepted by Briefings in Bioinformatics 2023. Thanks for all colleborators!
-- *2023.09*: &nbsp;🎉🎉 One paper accepted by Neurips 2023. Thanks for all colleborators!
+- *2023.09*: &nbsp;🎉🎉 One paper accepted by NeurIPS 2023. Thanks for all colleborators!
 
 # 📝 Publications
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='images/fabind.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[FABind: Fast and Accurate Protein-Ligand Binding](https://openreview.net/pdf?id=PnWakgg1RL) \\
+[FABind: Fast and Accurate Protein-Ligand Binding](https://arxiv.org/pdf/2310.06763.pdf) \\
 **Qizhi Pei**(co-first author), Kaiyuan Gao, Lijun Wu, Jinhua Zhu, Yingce Xia, Shufang Xie, Tao Qin, Kun He, Tie-Yan Liu, Rui Yan
 
 [**Project**](https://neurips.cc/virtual/2023/poster/71739) \| [![](https://img.shields.io/github/stars/QizhiPei/FABind?style=social&label=Code+Stars)](https://github.com/QizhiPei/FABind) \| [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Model)](https://huggingface.co/QizhiPei/FABind_model/tree/main)
@@ -62,7 +62,15 @@ His researches focus on AI for science, drug discovery, and geometric deep learn
 </div>
 </div>
 
-- ``Arxiv 2023`` [Examining User-Friendly and Open-Sourced Large GPT Models: A Survey on Language, Multimodal, and Scientific GPT Models](https://arxiv.org/abs/2308.14149), Kaiyuan Gao, Sunan He, Zhenyu He, Jiacheng Lin, **Qizhi Pei**, Jie Shao, Wei Zhang \| [![](https://img.shields.io/github/stars/GPT-Alternatives/gpt_alternatives?style=social&label=Code+Stars)](https://github.com/GPT-Alternatives/gpt_alternatives)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2023</div><img src='images/gpt_alter_survey.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Examining User-Friendly and Open-Sourced Large GPT Models: A Survey on Language, Multimodal, and Scientific GPT Models](https://arxiv.org/abs/2308.14149) \\
+Kaiyuan Gao, Sunan He, Zhenyu He, Jiacheng Lin, **Qizhi Pei**, Jie Shao, Wei Zhang
+
+[**Project**](https://github.com/GPT-Alternatives/gpt_alternatives) \| [![](https://img.shields.io/github/stars/GPT-Alternatives/gpt_alternatives?style=social&label=Code+Stars)](https://github.com/GPT-Alternatives/gpt_alternatives)
+</div>
+</div>
 
 # 🎖 Honors and Awards
 - *2022*, Excellent Graduation Thesis, USTC.
