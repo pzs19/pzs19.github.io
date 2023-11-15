@@ -52,35 +52,41 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">FABind: Fast and Accurate Protein-Ligand Binding</h1>
+            <h1 class="title is-1 publication-title"><small>FABind: Fast and Accurate Protein-Ligand Binding</small></h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Qizhi Pei</a><sup>*</sup>,</span>
+                <a href="https://qizhipei.github.io/" target="_blank">Qizhi Pei</a><sup>1,5*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Kaiyuan Gao</a><sup>*</sup>,</span>
+                  <a href="https://scholar.google.com/citations?user=Or77MPQAAAAJ&hl=zh-CN" target="_blank">Kaiyuan Gao</a><sup>2,*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Lijun Wu</a><sup>#</sup>,</span>
+                    <a href="https://apeterswu.github.io/" target="_blank">Lijun Wu</a><sup>3,#</sup>,</span>
                     <span class="author-block">
-                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jinhua Zhu</a>,</span>
+                      <a href="https://scholar.google.com/citations?user=FvGy0LQAAAAJ&hl=en" target="_blank">Jinhua Zhu</a><sup>4</sup>,</span>
                       <span class="author-block">
-                        <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yingce Xia</a>,</span><br>
+                        <a href="https://www.microsoft.com/en-us/research/people/yinxia/" target="_blank">Yingce Xia</a><sup>3</sup>,</span><br>
                         <span class="author-block">
-                          <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Shufang Xie</a>,</span>
+                          <a href="https://www.researchgate.net/profile/Shufang-Xie" target="_blank">Shufang Xie</a><sup>1</sup>,</span>
                           <span class="author-block">
-                            <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Tao Qin</a>,</span>
+                            <a href="https://www.microsoft.com/en-us/research/people/taoqin/" target="_blank">Tao Qin</a><sup>3</sup>,</span>
                             <span class="author-block">
-                              <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Kun He</a>,</span>
+                              <a href="https://scholar.google.com/citations?user=YTQnGJsAAAAJ&hl=en" target="_blank">Kun He</a><sup>2</sup>,</span>
                               <span class="author-block">
-                                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Tie-Yan Liu</a>,</span>
+                                <a href="https://www.microsoft.com/en-us/research/people/tyliu/" target="_blank">Tie-Yan Liu</a><sup>3</sup>,</span>
                                 <span class="author-block">
-                                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Rui Yan</a><sup>#</sup>,</span>
+                                  <a href="https://gsai.ruc.edu.cn/english/ruiyan" target="_blank">Rui Yan</a><sup>1,6#</sup>,</span>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>NeurIPS 2023</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution, <sup>#</sup>Indicates Correspondance</small></span>
+                    <span class="author-block"><sup>1</sup><small>Gaoling School of Artificial Intelligence, Renmin University of China</small><br>
+                      <sup>2</sup><small>School of Computer Science and Technology, Huazhong University of Science and Technology</small><br>
+                      <sup>3</sup><small>Microsoft Research AI4Science</small><br>
+                      <sup>4</sup><small>School of Information Science and Technology, University of Science and Technology of China</small><br>
+                      <sup>5</sup><small>Engineering Research Center of Next-Generation Intelligent Search and Recommendation, Ministry of Education</small><br>
+                      <sup>6</sup><small>Beijing Key Laboratory of Big Data Management and Analysis Methods</small><br>
+                      NeurIPS 2023</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution. <sup>#</sup>Indicates Correspondance</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -143,11 +149,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/6npi.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Show case for large unseen protein (PDB 6NPI). Pose prediction by FABind (green), DiffDock (wheat), E3Bind (magenta), TankBind (cyan), EquiBind (orange), and ground truth (red) are placed together with protein target. FABind successfully identifies the pocket, while the others are all off-site.
       </h2>
     </div>
   </div>
@@ -162,7 +168,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Modeling the interaction between proteins and ligands and accurately predicting their binding structures is a critical yet challenging task in drug discovery. 
+            Recent advancements in deep learning have shown promise in addressing this challenge, with sampling-based and regression-based methods emerging as two prominent approaches. 
+            However, these methods have notable limitations. Sampling-based methods often suffer from low efficiency due to the need for generating multiple candidate structures for selection. 
+            On the other hand, regression-based methods offer fast predictions but may experience decreased accuracy. 
+            Additionally, the variation in protein sizes often requires external modules for selecting suitable binding pockets, further impacting efficiency.
+            In this work, we propose FABind, an end-to-end model that combines pocket prediction and docking to achieve accurate and fast protein-ligand binding. 
+            FABind incorporates a unique ligand-informed pocket prediction module, which is also leveraged for docking pose estimation. 
+            The model further enhances the docking process by incrementally integrating the predicted pocket to optimize protein-ligand binding, reducing discrepancies between training and inference.
+            Through extensive experiments on benchmark datasets, our proposed FABind demonstrates strong advantages in terms of effectiveness and efficiency compared to existing methods.
           </p>
         </div>
       </div>
@@ -171,38 +185,39 @@
 </section>
 <!-- End paper abstract -->
 
-
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/fabind/pipeline.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Overview.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/fabind/table1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Flexible blind self-docking performance.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/fabind/table2.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Flexible blind self-docking performance on unseen receptors.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/fabind/case1.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Case studies for PDB 6NPI and 6G3C.
+      </h2>
+    </div>
+    <div class="item">
+      <img src="static/images/fabind/case2.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Case studies for PDB 6N93 and 6JB4.
       </h2>
     </div>
   </div>
@@ -215,49 +230,44 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -265,7 +275,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -279,7 +289,7 @@
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/poster_fabind.pdf" width="100%" height="550">
           </iframe>
         
       </div>
@@ -291,8 +301,24 @@
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <h2 class="title">Citation</h2>
+      <pre><code>
+@article{pei2023fabind,
+  title={FABind: Fast and Accurate Protein-Ligand Binding},
+  author={Pei, Qizhi and Gao, Kaiyuan and Wu, Lijun and Zhu, Jinhua and Xia, Yingce and Xie, Shufang and Qin, Tao and He, Kun and Liu, Tie-Yan and Yan, Rui},
+  journal={arXiv preprint arXiv:2310.06763},
+  year={2023}
+}
+
+@inproceedings{
+  pei2023fabind,
+  title={{FAB}ind: Fast and Accurate Protein-Ligand Binding},
+  author={Qizhi Pei and Kaiyuan Gao and Lijun Wu and Jinhua Zhu and Yingce Xia and Shufang Xie and Tao Qin and Kun He and Tie-Yan Liu and Rui Yan},
+  booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+  year={2023},
+  url={https://openreview.net/forum?id=PnWakgg1RL}
+}
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
