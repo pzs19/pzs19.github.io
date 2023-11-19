@@ -40,9 +40,101 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
+  <!-- <script src="static/js/bulma-carousel.min.js"></script> 轮播--> 
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="static/js/show_results.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/ngl@latest/dist/ngl.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <style>
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-gallery div {
+        margin: 20px;
+        /* margin-bottom: 20px; */
+        text-align: center; /* 确保图片和文本居中对齐 important */
+    }
+
+    .image-gallery img {
+        width: 70%; /* 或其他期望的宽度 */
+        height: auto; /* 保持图片比例 */
+        display: block;
+        margin: 0 auto; /* 自动边距实现水平居中 */
+    }
+
+    .image-gallery figcaption {
+        display: block; /* 使描述文本显示为块级元素 */
+        text-align: center; /* 描述文本居中对齐 */
+        margin-top: 5px; /* 与图片之间的距离 */
+    }
+    /* 设置 NGL Viewer 的样式 */
+    #pdbViewer {
+      border: 1px solid #ddd; /* 添加边框 */
+      border-radius: 4px; /* 圆角边框 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微的阴影 */
+      margin-left: 45px;
+    }
+  
+    /* 设置表格样式 */
+    #pdbTable {
+      width: 100%; /* 表格宽度为100% */
+      border-collapse: collapse; /* 边框合并 */
+      margin-top: 0px; /* 表格上边距 */
+    }
+  
+    #pdbTable th, #pdbTable td {
+      text-align: center; /* 列居中显示 */
+      border: 1px solid #ddd; /* 单元格边框 */
+      padding: 8px; /* 单元格内边距 */
+    }
+  
+    #pdbTable th {
+      background-color: #f4f4f4; /* 表头背景颜色 */
+      color: #333; /* 表头文字颜色 */
+    }
+  
+    #pdbTable tr:nth-child(even) {
+      background-color: #f9f9f9; /* 偶数行背景颜色 */
+    }
+  
+    #pdbTable tr:hover {
+      background-color: #eaeaea; /* 鼠标悬浮时行的背景颜色 */
+    }
+  
+    /* 分页按钮样式 */
+    .pagination-previous, .pagination-next {
+      background-color: #696969; /* 背景 */
+      color: white; /* 白色文字 */
+      padding: 8px 15px; /* 内边距 */
+      text-align: center; /* 文字居中 */
+      text-decoration: none; /* 去除下划线 */
+      display: inline-block; /* 行内块元素 */
+      font-size: 14px; /* 字体大小 */
+      margin: 4px 2px; /* 外边距 */
+      transition: background-color 0.3s; /* 过渡效果 */
+      border: none; /* 去除边框 */
+      border-radius: 4px; /* 圆角边框 */
+      cursor: pointer; /* 鼠标指针变为手指形状 */
+    }
+
+    .pagination-previous:hover, .pagination-next:hover {
+      background-color: #0b7dda; /* 鼠标悬浮时背景颜色变深 */
+    }
+
+    .pagination-previous:disabled, .pagination-next:disabled {
+      background-color: #e7e7e7; /* 禁用时背景颜色 */
+      color: #bdbdbd; /* 禁用时文字颜色 */
+      cursor: not-allowed; /* 禁用时鼠标指针 */
+    }
+    /* 缩小页脚中的字体大小 */
+    .footer .content p {
+      font-size: 0.8em; /* 调整字体大小，0.8em 通常比默认大小小 */
+    }
+  </style>
 </head>
 <body>
 
@@ -142,24 +234,6 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/6npi.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Show case for large unseen protein (PDB 6NPI). Pose prediction by FABind (green), DiffDock (wheat), E3Bind (magenta), TankBind (cyan), EquiBind (orange), and ground truth (red) are placed together with protein target. FABind successfully identifies the pocket, while the others are all off-site.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -185,8 +259,52 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section">
+  <div class="container">
+    <h2 class="title">Results on the PDBBind v2020 testset</h2>
+    <div class="columns">
+      <div class="column is-half">
+        <table id="pdbTable" class="table is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>PDB ID</th>
+              <th>RMSD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 表格数据将通过JavaScript动态加载 -->
+          </tbody>
+        </table>
+        <nav class="pagination is-small" role="navigation" aria-label="pagination">
+          <a class="pagination-previous">Previous</a>
+          <a class="pagination-next">Next</a>
+        </nav>
+      </div>
+      <div class="column is-half">
+        <div id="pdbViewer" style="width:100%; height:505px; border: 2px solid gray;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/6npi.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Show case for large unseen protein (PDB 6NPI). Pose prediction by FABind (green), DiffDock (wheat), E3Bind (magenta), TankBind (cyan), EquiBind (orange), and ground truth (red) are placed together with protein target. FABind successfully identifies the pocket, while the others are all off-site.
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -223,10 +341,17 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
-
+<div class="image-gallery">
+  <div><img src="static/images/fabind/pipeline.png" alt="Overview"/></div>
+  <figcaption>Overview</figcaption>
+  <div><img src="static/images/fabind/table1.png" alt="Flexible blind self-docking performance"/></div>
+  <figcaption>Flexible blind self-docking performance</figcaption>
+  <div><img src="static/images/fabind/table2.png" alt="Flexible blind self-docking performance on unseen receptors"/></div>
+  <figcaption>Flexible blind self-docking performance on unseen receptors</figcaption>
+</div>
 
 
 <!-- Youtube video -->
@@ -303,13 +428,6 @@
     <div class="container is-max-desktop content">
       <h2 class="title">Citation</h2>
       <pre><code>
-@article{pei2023fabind,
-  title={FABind: Fast and Accurate Protein-Ligand Binding},
-  author={Pei, Qizhi and Gao, Kaiyuan and Wu, Lijun and Zhu, Jinhua and Xia, Yingce and Xie, Shufang and Qin, Tao and He, Kun and Liu, Tie-Yan and Yan, Rui},
-  journal={arXiv preprint arXiv:2310.06763},
-  year={2023}
-}
-
 @inproceedings{
   pei2023fabind,
   title={{FAB}ind: Fast and Accurate Protein-Ligand Binding},
