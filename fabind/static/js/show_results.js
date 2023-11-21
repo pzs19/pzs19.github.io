@@ -15,18 +15,38 @@ document.addEventListener('DOMContentLoaded', function() {
       stage.removeAllComponents();
       // stage.loadFile(`static/pdbs/${pdbId}.pdb`, { defaultRepresentation: true });
       stage.loadFile(`static/protein_pdb_files/${pdbId}_protein.pdb`).then(function (o) {
+        component = o
         // 设置蛋白质和配体的颜色
-        o.addRepresentation("cartoon", { color: "white" }); // 蛋白质的颜色
-        // o.addRepresentation("licorice", { color: "green", sele: "ligand" }); // 配体的颜色
+        component.addRepresentation("cartoon", { color: "white", opacity: 0.8 });
         o.autoView();
+        // o.addRepresentation("cartoon", { color: "white", opacity: 0.2 }); // 蛋白质的颜色
+        // o.addRepresentation("surface", { color: "white", opacity: 0.2 });
+        // o.addRepresentation("licorice", { color: "green", sele: "ligand" }); // 配体的颜色
+        // o.autoView();
+      });
+
+      // 为 Cartoon 按钮添加点击事件处理
+      document.getElementById('btnCartoon').addEventListener('click', function() {
+        if (component) {
+          component.removeAllRepresentations(); // 移除当前的表示
+          component.addRepresentation("cartoon", { color: "white", opacity: 0.8 }); // 添加 cartoon 表示
+        }
+      });
+
+      // 为 Surface 按钮添加点击事件处理
+      document.getElementById('btnSurface').addEventListener('click', function() {
+        if (component) {
+          component.removeAllRepresentations(); // 移除当前的表示
+          component.addRepresentation("surface", { color: "white", opacity: 0.1 }); // 添加 surface 表示
+        }
       });
 
       stage.loadFile(`static/ligand_sdf_files/${pdbId}.sdf`).then(function (o) {
-        o.addRepresentation("licorice", { color: "red" });
+        o.addRepresentation("ball+stick", { color: "red" });
       });
 
       stage.loadFile(`static/ligand_sdf_files/${pdbId}_gt.sdf`).then(function (o) {
-        o.addRepresentation("licorice", { color: "green" });
+        o.addRepresentation("ball+stick", { color: "green" });
       });
     }
   
@@ -63,13 +83,21 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   
-    // 行点击事件
     document.getElementById('pdbTable').addEventListener('click', function(event) {
       let target = event.target;
       while (target.tagName !== 'TR') {
         target = target.parentNode;
       }
       const pdbId = target.cells[0].textContent;
+    
+      // 移除其他所有行的高亮样式
+      document.querySelectorAll('#pdbTable tr').forEach(tr => {
+        tr.classList.remove('highlighted');
+      });
+    
+      // 为被点击的行添加高亮样式
+      target.classList.add('highlighted');
+    
       loadPDB(pdbId);
     });
   
@@ -86,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
       currentPage++;
       loadTableData(currentPage);
     });
+
   
     // 初始化NGL Viewer并加载第一页数据
     initViewer();

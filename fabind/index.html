@@ -70,6 +70,7 @@
         display: block; /* 使描述文本显示为块级元素 */
         text-align: center; /* 描述文本居中对齐 */
         margin-top: 5px; /* 与图片之间的距离 */
+        font-size: 26px;
     }
     /* 设置 NGL Viewer 的样式 */
     #pdbViewer {
@@ -93,16 +94,24 @@
     }
   
     #pdbTable th {
-      background-color: #f4f4f4; /* 表头背景颜色 */
-      color: #333; /* 表头文字颜色 */
+      background-color: #4a5568; /* 深灰色背景 */
+      color: white; /* 白色文字 */
     }
   
+    /* 偶数行背景色 */
     #pdbTable tr:nth-child(even) {
-      background-color: #f9f9f9; /* 偶数行背景颜色 */
+      background-color: #f7fafc; /* 淡蓝灰色背景 */
     }
-  
+
+    /* 鼠标悬浮时行的背景颜色 */
     #pdbTable tr:hover {
-      background-color: #eaeaea; /* 鼠标悬浮时行的背景颜色 */
+      background-color: #ebf4ff; /* 更亮的蓝灰色 */
+    }
+
+    /* 点击后的行的高亮样式，增加了具体性 */
+    #pdbTable tr.highlighted {
+      background-color: #bee3f8; /* 亮蓝色背景 */
+      color: black; /* 黑色文字 */
     }
   
     /* 分页按钮样式 */
@@ -280,8 +289,29 @@
           <a class="pagination-next">Next</a>
         </nav>
       </div>
+      <!-- <div class="column is-half">
+        <div style="text-align: left;">
+          <button class="pagination-previous" id="btnCartoon">Cartoon</button>
+        </div>
+        <div style="text-align: right;">
+          <button class="pagination-next" id="btnSurface">Surface</button>
+        </div>
+        <div id="pdbViewer" style="width:100%; height:475px; border: 2px solid gray;"></div>
+        <p style="text-align: left; padding-left: 100px;">
+          <span style="color: red;">Red:</span> ground truth ligand pose.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+          <span style="color: green;">Green:</span> ligand pose predicted by FABind.
+        </p>
+      </div> -->
       <div class="column is-half">
-        <div id="pdbViewer" style="width:100%; height:505px; border: 2px solid gray;"></div>
+        <div id="pdbViewer" style="width:100%; height:444px; border: 2px solid gray;"></div>
+        <p style="text-align: left; padding-left: 100px;">
+          <span style="color: red;">Red:</span> ground truth ligand pose.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+          <span style="color: green;">Green:</span> ligand pose predicted by FABind.
+        </p>
+        <div style="display: flex; justify-content: space-between; margin-left: 60px;">
+          <button class="pagination-previous" id="btnCartoon" >Cartoon</button>
+          <button class="pagination-next" id="btnSurface">Surface</button>
+        </div>
       </div>
     </div>
   </div>
@@ -343,15 +373,62 @@
 </div>
 </section> -->
 <!-- End image carousel -->
-
+<!-- <section class="section hero is-light">
 <div class="image-gallery">
-  <div><img src="static/images/fabind/pipeline.png" alt="Overview"/></div>
+  <div><img src="static/images/fabind/overview.png" alt="Overview"/></div>
   <figcaption>Overview</figcaption>
-  <div><img src="static/images/fabind/table1.png" alt="Flexible blind self-docking performance"/></div>
-  <figcaption>Flexible blind self-docking performance</figcaption>
-  <div><img src="static/images/fabind/table2.png" alt="Flexible blind self-docking performance on unseen receptors"/></div>
-  <figcaption>Flexible blind self-docking performance on unseen receptors</figcaption>
 </div>
+</section> -->
+<section class="section hero is-light">
+  <div class="image-gallery" style="display: flex;">
+    <div style="flex: 1; margin-left: 200px;">
+      <img src="static/images/fabind/overview.png" alt="Overview" style="width: 60%;"/>
+    </div>
+    <div style="flex: 1; padding-left: 20px; display: flex; flex-direction: column; justify-content: center;">
+      <ul style="font-size: 26px; list-style-type: disc; list-style-position: inside; text-align: left;">
+        <li><span style="color: #5E86C1;">Unified network</span> for pocket prediction and docking process</li><br>
+        <li><span style="color: #5E86C1;">End-to-end framework</span>, input rigid protein and random molecule conformation, then output the predicted pose</li><br>
+        <li><span style="color: #5E86C1;">Scheduled sampling</span>, training with predicted pocket</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="image-gallery" style="display: flex;">
+    <div style="flex: 1; margin-left: 200px;">
+      <img src="static/images/fabind/fabind_layer.png" alt="Overview" style="width: 60%;"/>
+    </div>
+    <div style="flex: 1; padding-left: 20px; display: flex; flex-direction: column; justify-content: center;">
+      <ul style="font-size: 26px; list-style-type: disc; list-style-position: inside; text-align: left;">
+        <li><span style="color: #5E86C1;">Independent message passing</span>: inside protein and molecule </li><br>
+        <li><span style="color: #5E86C1;">Cross-attention update</span>: cross protein and molecule </li><br>
+        <li><span style="color: #5E86C1;">Interfacial message passing</span>: on the protein-molecule contact surface</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+<div class="image-gallery">
+  <figcaption><strong>Flexible blind self-docking performance.</strong> FABind shows comparable performance with DiffDock (10) but with faster speed.</figcaption>
+  <div><img src="static/images/fabind/table1.png" alt="table1" style="width: 60%;"/></div>
+</div>
+</section>
+
+<section class="hero">
+  <div class="image-gallery">
+    <figcaption><br><strong>Flexible blind self-docking performance on unseen receptors.</strong> FABind shows the best performance with high speed.</figcaption>
+    <div><img src="static/images/fabind/table2.png" alt="table2" style="width: 60%;"/></div>
+</div>
+</section>
+
+<section class="section hero is-light">
+  <div class="image-gallery">
+    <figcaption><strong>Flexible blind self-docking performance on apo proteins</strong> (generated by ESMFold) and <strong>pocket prediction performance.</strong></figcaption>
+    <div><img src="static/images/fabind/apo_pocket_pred.png" alt="apo_pocket_pred" style="width: 90%;"/></div>
+</div>
+</section>
 
 
 <!-- Youtube video -->
@@ -409,7 +486,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<section class="hero">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -424,10 +501,10 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">Citation</h2>
-      <pre><code>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Citation</h2>
+    <pre><code>
 @inproceedings{
   pei2023fabind,
   title={{FAB}ind: Fast and Accurate Protein-Ligand Binding},
