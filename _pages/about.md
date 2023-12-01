@@ -27,9 +27,9 @@ His researches focus on AI for science, drug discovery, and geometric deep learn
 
 
 # 🔥 News
-- *2023.10*: &nbsp;🎉🎉 One paper accepted by EMNLP 2023. Thanks for all colleborators!
-- *2023.10*: &nbsp;🎉🎉 One paper accepted by Briefings in Bioinformatics 2023. Thanks for all colleborators!
-- *2023.09*: &nbsp;🎉🎉 One paper accepted by NeurIPS 2023. Thanks for all colleborators!
+- *2023.10*: &nbsp;🎉🎉 One paper accepted by EMNLP 2023. Thanks for all collaborators!
+- *2023.10*: &nbsp;🎉🎉 One paper accepted by Briefings in Bioinformatics 2023. Thanks for all collaborators!
+- *2023.09*: &nbsp;🎉🎉 One paper accepted by NeurIPS 2023. Thanks for all collaborators!
 
 # 📝 Publications
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='images/fabind.png' alt="sym" width="100%"></div></div>

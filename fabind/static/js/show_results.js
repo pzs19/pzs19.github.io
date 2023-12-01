@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
       data.forEach(row => {
         const tr = document.createElement('tr');
         console.log(row); // 添加此行来检查解析后的数据
-        tr.innerHTML = `<td>${row.pdb_id}</td><td>${row.rmsd}</td>`;
+        tr.innerHTML = `<td><a href="https://www.rcsb.org/structure/${row.pdb_id}" target="_blank">${row.pdb_id}</td><td>${row.rmsd}</td>`;
         tableBody.appendChild(tr);
       });
     }
