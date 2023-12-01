@@ -195,7 +195,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2310.06763.pdf" target="_blank"
+                        <a href="https://openreview.net/pdf?id=PnWakgg1RL" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -228,14 +228,26 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2310.06763" target="_blank"
+                  <a href="https://neurips.cc/virtual/2023/poster/71739" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Poster</span>
                 </a>
               </span>
+                  
+                <span class="link-block">
+                    <a href="https://github.com/KyGao/awesome-docking" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <!-- <span>Related</span> -->
+                    <span>Awesome Docking</span>
+                </a>
+              </span>
+              
             </div>
           </div>
         </div>
@@ -402,15 +414,15 @@
       </div>
       <div style="flex: 1; margin-left: -50px; display: flex; flex-direction: column; justify-content: center;">
         <div class="content has-text-justified" style="font-size: 18px;">
-          <h3 class="title" style="font-size: 22px;">Framework Introduction</h3>
+          <h3 class="title" style="font-size: 22px;">Framework</h3>
           <p>
           <ul>
               <li>
                 We divide the task into pocket prediction and docking pose prediction:
                 <ul>
-                  <li>Pocket prediction: take the whole protein and the ligand as input and predicts the coordinates of the pocket center, where the ligand is randomly placed at the center of the protein. 
+                  <li><span style="color: #5E86C1;">Pocket prediction</span>: take the whole protein and the ligand as input and predicts the coordinates of the pocket center, where the ligand is randomly placed at the center of the protein. 
                     After determining the pocket center, a pocket is defined as a set of amino acids within a fixed radius around the center.</li>
-                  <li>Docking pose prediction: the ligand is moved to the pocket center and the ligand-pocket pair iteratively goes through the FABind layers to obtain the final pose prediction.</li>
+                  <li><span style="color: #5E86C1;">Docking pose prediction</span>: the ligand is moved to the pocket center and the ligand-pocket pair iteratively goes through the FABind layers to obtain the final pose prediction.</li>
                 </ul>
               </li>
               <li>
