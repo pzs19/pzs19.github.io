@@ -247,9 +247,9 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column">
         <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
+        <div class="content has-text-justified" style="font-size: 20px;">
           <p>
             Modeling the interaction between proteins and ligands and accurately predicting their binding structures is a critical yet challenging task in drug discovery. 
             Recent advancements in deep learning have shown promise in addressing this challenge, with sampling-based and regression-based methods emerging as two prominent approaches. 
@@ -303,7 +303,19 @@
         </p>
       </div> -->
       <div class="column is-half">
-        <div id="pdbViewer" style="width:100%; height:444px; border: 2px solid gray;"></div>
+        <!-- <div style="display: flex; align-items: center; margin-bottom: 10px; margin-left: 60px">
+          <label for="opacitySlider" style="margin-right: 20px;">Transparency: </label>
+          <input type="range" id="opacitySlider" min="0" max="1" step="0.1" value="0.8" style="width: 400px;">
+        </div> -->
+        <div style="display: flex; align-items: center; margin-bottom: 10px; margin-left: 50px">
+          <label for="opacitySlider" style="margin-right: 10px;">Transparency:</label>
+          <div style="flex-grow: 1; position: relative; margin-left: 20px">
+            <input type="range" id="opacitySlider" min="0" max="1" step="0.02" value="0.8" style="width: 100%;">
+            <!-- <span style="position: absolute; left: -20px; bottom: 0px;">0.0</span>  -->
+            <!-- <span style="position: absolute; right: -20px; bottom: 0px;">1.0</span>  -->
+          </div>
+        </div>
+        <div id="pdbViewer" style="width:100%; height:410px; border: 2px solid gray;"></div>
         <p style="text-align: left; padding-left: 100px;">
           <span style="color: red;">Red:</span> ground truth ligand pose.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
           <span style="color: green;">Green:</span> ligand pose predicted by FABind.
@@ -379,37 +391,137 @@
   <figcaption>Overview</figcaption>
 </div>
 </section> -->
-<section class="section hero is-light">
-  <div class="image-gallery" style="display: flex;">
-    <div style="flex: 1; margin-left: 200px;">
-      <img src="static/images/fabind/overview.png" alt="Overview" style="width: 60%;"/>
+<section class="section hero">
+  <div class="container">
+    <h2 class="title">Methods</h2>
+    <h3 class="title" style="font-size: 22px;">Framework Introduction</h3>
+    <div class="image-gallery" style="display: flex;">
+      <div style="flex: 1; margin-left: 100px;">
+        <img src="static/images/fabind/overview.png" alt="Overview" style="width: 60%;"/>
+      </div>
+      <div style="flex: 1; margin-left: -50px; display: flex; flex-direction: column; justify-content: center;">
+        <div class="content has-text-justified" style="font-size: 18px;">
+          <p>
+          <ul>
+              <li>
+                We divide the task into pocket prediction and docking:
+                <ul>
+                  <li>Pocket prediction: take the whole protein and the ligand as input and predicts the coordinates of the pocket center, where the ligand is randomly placed at the center of the protein. 
+                    After determining the pocket center, a pocket is defined as a set of amino acids within a fixed radius around the center.</li>
+                  <li>Docking: the ligand is moved to the pocket center and the ligand-pocket pair iteratively goes through the FABind layers to obtain the final pose prediction.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Advantages</b>:
+                <ul>
+                  <li><span style="color: #5E86C1;">Unified network</span> for pocket prediction and docking process.</li>
+                  <li><span style="color: #5E86C1;">End-to-end framework</span>, input rigid protein and random molecule conformation, then output the predicted pose.</li>
+                  <li><span style="color: #5E86C1;">Scheduled sampling</span>, training with predicted pocket.</li>
+                </ul>
+              </li>
+          </ul>
+          </p>
+        </div>
+      </div>
     </div>
-    <div style="flex: 1; padding-left: 20px; display: flex; flex-direction: column; justify-content: center;">
-      <ul style="font-size: 26px; list-style-type: disc; list-style-position: inside; text-align: left;">
-        <li><span style="color: #5E86C1;">Unified network</span> for pocket prediction and docking process</li><br>
-        <li><span style="color: #5E86C1;">End-to-end framework</span>, input rigid protein and random molecule conformation, then output the predicted pose</li><br>
-        <li><span style="color: #5E86C1;">Scheduled sampling</span>, training with predicted pocket</li>
-      </ul>
+
+  <!-- </section>
+
+  <section class="section hero"> -->
+    <h3 class="title" style="font-size: 22px;">FABind Layer</h3>
+    <div class="image-gallery" style="display: flex;">
+      <div style="flex: 1; margin-left: 100px;">
+        <img src="static/images/fabind/fabind_layer.png" alt="Overview" style="width: 60%;"/>
+      </div>
+      <div style="flex: 1; margin-left: -50px; display: flex; flex-direction: column; justify-content: center;">
+        <div class="content has-text-justified" style="font-size: 18px;">
+          <p>
+          <ul>
+              <li>
+                <b>FABind</b> layer consists of the following three parts:
+                <ul>
+                  <li><span style="color: #5E86C1;">Independent message passing</span>. The independent encoder first passes messages inside the protein and ligand to update node embeddings and coordinates.</li>
+                  <li><span style="color: #5E86C1;">Cross-attention update</span>. This block operates to exchange information across every node and updates pair embeddings accordingly.</li>
+                  <li><span style="color: #5E86C1;">Interfacial message passing</span>. This layer focuses on the contact surface and attentively updates coordinates and representations for such nodes.</li>
+                </ul>
+              </li>
+          </ul>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section hero">
-  <div class="image-gallery" style="display: flex;">
-    <div style="flex: 1; margin-left: 200px;">
-      <img src="static/images/fabind/fabind_layer.png" alt="Overview" style="width: 60%;"/>
+  <div class="container">
+    <h2 class="title">Results</h2>
+    <h3 class="title" style="font-size: 22px;">Flexible Blind Self-docking Performance</h3>
+    <div class="image-gallery" style="display: flex;">
+      <div style="flex: 1; margin-left: -10px; display: flex; flex-direction: column; justify-content: center;">
+        <div class="content has-text-justified" style="font-size: 18px;">
+          <p>
+            Across most metrics, FABind ranking either as the best or second best.
+            FABind exceeds the DiffDock with 10 sampled poses. 
+            Although FABind may not achieve the best performance in terms of the <2Å metric, it demonstrates exceptional proficiency with a mean RMSD score of 6.4Å
+          </ul>
+          </p>
+        </div>
+      </div>
+      <div style="flex: 1; margin-left: 10px; margin-right: -10px">
+        <img src="static/images/fabind/table1.png" alt="table1" style="width: 150%;"/>
+      </div>
     </div>
-    <div style="flex: 1; padding-left: 20px; display: flex; flex-direction: column; justify-content: center;">
-      <ul style="font-size: 26px; list-style-type: disc; list-style-position: inside; text-align: left;">
-        <li><span style="color: #5E86C1;">Independent message passing</span>: inside protein and molecule </li><br>
-        <li><span style="color: #5E86C1;">Cross-attention update</span>: cross protein and molecule </li><br>
-        <li><span style="color: #5E86C1;">Interfacial message passing</span>: on the protein-molecule contact surface</li>
-      </ul>
+
+    <h3 class="title" style="font-size: 22px;">Flexible Blind Self-docking Performance on Unseen Receptors</h3>
+    <div class="image-gallery" style="display: flex;">
+      <div style="flex: 1; margin-left: -10px; display: flex; flex-direction: column; justify-content: center;">
+        <div class="content has-text-justified" style="font-size: 18px;">
+          <p>
+            FABind surpasses other deep learning and traditional methods by a significant margin across all evaluation metrics.
+          </p>
+        </div>
+      </div>
+      <div style="flex: 1; margin-left: 10px; margin-right: -10px">
+        <img src="static/images/fabind/table2.png" alt="table2" style="width: 150%;"/>
+      </div>
+    </div>
+
+    <h3 class="title" style="font-size: 22px;">Flexible Blind Self-docking Performance on Apo-proteins</h3>
+    <div class="image-gallery" style="display: flex;">
+      <div style="flex: 1; margin-left: -10px; display: flex; flex-direction: column; justify-content: center;">
+        <div class="content has-text-justified" style="font-size: 18px;">
+          <p>
+            FABind achieves an RMSD of less than 2Å on 24.9% of the complexes generated by ESMFold.
+          </p>
+        </div>
+      </div>
+      <div style="flex: 1; margin-left: 10px; margin-right: -10px">
+        <img src="static/images/fabind/apo.png" alt="apo" style="width: 60%;"/>
+      </div>
+    </div>
+
+    <h3 class="title" style="font-size: 22px;">Pocket Prediction Analysis</h3>
+    <div class="image-gallery" style="display: flex;">
+      <div style="flex: 1; margin-left: -10px; display: flex; flex-direction: column; justify-content: center;">
+        <div class="content has-text-justified" style="font-size: 18px;">
+          <p>
+            <ul>
+              <li>Removing the center constraint (classification only) significantly hurts the prediction performance.</li>
+              <li>The integration of ligand information into the pocket prediction task enhances performance and efficiency.</li>
+              <li>Combined with center constraint, even without incorporating ligand information, our pocket prediction performance outperforms TankBind and E3Bind.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div style="flex: 1; margin-left: 10px; margin-right: -10px">
+        <img src="static/images/fabind/pocket_pred.png" alt="pocket_pred" style="width: 60%;"/>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
 <div class="image-gallery">
   <figcaption><strong>Flexible blind self-docking performance.</strong> FABind shows comparable performance with DiffDock (10) but with faster speed.</figcaption>
   <div><img src="static/images/fabind/table1.png" alt="table1" style="width: 60%;"/></div>
@@ -428,7 +540,7 @@
     <figcaption><strong>Flexible blind self-docking performance on apo proteins</strong> (generated by ESMFold) and <strong>pocket prediction performance.</strong></figcaption>
     <div><img src="static/images/fabind/apo_pocket_pred.png" alt="apo_pocket_pred" style="width: 90%;"/></div>
 </div>
-</section>
+</section> -->
 
 
 <!-- Youtube video -->

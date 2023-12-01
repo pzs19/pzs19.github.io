@@ -25,19 +25,48 @@ document.addEventListener('DOMContentLoaded', function() {
         // o.autoView();
       });
 
-      // 为 Cartoon 按钮添加点击事件处理
+      // // 为 Cartoon 按钮添加点击事件处理
+      // document.getElementById('btnCartoon').addEventListener('click', function() {
+      //   if (component) {
+      //     component.removeAllRepresentations(); // 移除当前的表示
+      //     component.addRepresentation("cartoon", { color: "white", opacity: 0.8 }); // 添加 cartoon 表示
+      //   }
+      // });
+
+      // // 为 Surface 按钮添加点击事件处理
+      // document.getElementById('btnSurface').addEventListener('click', function() {
+      //   if (component) {
+      //     component.removeAllRepresentations(); // 移除当前的表示
+      //     component.addRepresentation("surface", { color: "white", opacity: 0.1 }); // 添加 surface 表示
+      //   }
+      // });
+      let currentRepresentation = "cartoon"; // 默认为 cartoon
+
       document.getElementById('btnCartoon').addEventListener('click', function() {
         if (component) {
-          component.removeAllRepresentations(); // 移除当前的表示
-          component.addRepresentation("cartoon", { color: "white", opacity: 0.8 }); // 添加 cartoon 表示
+          component.removeAllRepresentations();
+          component.addRepresentation("cartoon", { color: "white", opacity: 0.8 });
+          currentRepresentation = "cartoon";
         }
       });
 
-      // 为 Surface 按钮添加点击事件处理
       document.getElementById('btnSurface').addEventListener('click', function() {
         if (component) {
-          component.removeAllRepresentations(); // 移除当前的表示
-          component.addRepresentation("surface", { color: "white", opacity: 0.1 }); // 添加 surface 表示
+          component.removeAllRepresentations();
+          component.addRepresentation("surface", { color: "white", opacity: 0.1 });
+          currentRepresentation = "surface";
+        }
+      });
+
+      document.getElementById('opacitySlider').addEventListener('input', function(event) {
+        let opacityValue = event.target.value;
+        if (component) {
+          component.removeAllRepresentations();
+          if (currentRepresentation === "cartoon") {
+            component.addRepresentation("cartoon", { color: "white", opacity: opacityValue });
+          } else if (currentRepresentation === "surface") {
+            component.addRepresentation("surface", { color: "white", opacity: opacityValue });
+          }
         }
       });
 
@@ -99,6 +128,15 @@ document.addEventListener('DOMContentLoaded', function() {
       target.classList.add('highlighted');
     
       loadPDB(pdbId);
+    });
+
+    document.getElementById('opacitySlider').addEventListener('input', function(event) {
+      let opacityValue = event.target.value;
+      if (component) {
+        component.removeAllRepresentations(); // Remove current representation
+        component.addRepresentation("cartoon", { color: "white", opacity: opacityValue });
+        // Add other representations as needed
+      }
     });
   
     // 分页逻辑
