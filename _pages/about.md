@@ -19,7 +19,7 @@ redirect_from:
 
 Qizhi Pei (裴启智 in Chinese) is currently a second year Ph.D. student at [Gaoling School of Artificial Intelligence (GSAI)](http://ai.ruc.edu.cn/) in [Renmin University of China (RUC)](https://www.ruc.edu.cn/), supervised by [Prof. Rui Yan](https://gsai.ruc.edu.cn/addons/teacher/index/info.html?user_id=0&ruccode=20200243&ln=cn). He got the B.S. degree from [School of Computer Science and Technology](https://cs.ustc.edu.cn/), [Universy of Science and Technology of China (USTC)](https://www.ustc.edu.cn/) in 2022. He currently is an intern of [Microsoft Research AI4Science](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/), mentored by [Dr. Lijun Wu](https://apeterswu.github.io/). He also works closely with [Dr. Yingce Xia](https://www.microsoft.com/en-us/research/people/yinxia/) and [Kaiyuan Gao](https://github.com/KyGao).
 
-His researches focus on AI for science, drug discovery, and geometric deep learning. 
+His researches focus on AI4science, geometric deep learning, and multi-modal learning for biomolecule. 
 
 <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat. -->
 
@@ -27,6 +27,7 @@ His researches focus on AI for science, drug discovery, and geometric deep learn
 
 
 # 🔥 News
+- *2024.02*: &nbsp; Two papers about cross-modal learning for biomolecule are submitted to Arxiv.
 - *2023.10*: &nbsp;🎉🎉 One paper accepted by EMNLP 2023. Thanks for all collaborators!
 - *2023.10*: &nbsp;🎉🎉 One paper accepted by Briefings in Bioinformatics 2023. Thanks for all collaborators!
 - *2023.09*: &nbsp;🎉🎉 One paper accepted by NeurIPS 2023. Thanks for all collaborators!
@@ -62,6 +63,26 @@ His researches focus on AI for science, drug discovery, and geometric deep learn
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2024</div><img src='images/biot5_plus.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[BioT5+: Towards Generalized Biological Understanding with IUPAC Integration and Multi-task Tuning](https://arxiv.org/abs/2402.17810) \\
+**Qizhi Pei**, Lijun Wu, Kaiyuan Gao, Xiaozhuan Liang, Yin Fang, Jinhua Zhu, Shufang Xie, Tao Qin, Rui Yan
+
+[**Project**](https://github.com/QizhiPei/BioT5) \| [![](https://img.shields.io/github/stars/QizhiPei/BioT5?style=social&label=Code+Stars)](https://github.com/QizhiPei/BioT5)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2024</div><img src='images/cmbl_survey.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Leveraging Biomolecule and Natural Language through Multi-Modal Learning: A Survey](https://arxiv.org/abs/2403.01528) \\
+**Qizhi Pei**, Lijun Wu, Kaiyuan Gao, Jinhua Zhu, Yue Wang, Zun Wang, Tao Qin, Rui Yan
+
+[**Project**](https://github.com/QizhiPei/Awesome-Biomolecule-Language-Cross-Modeling) \| [![](https://img.shields.io/github/stars/QizhiPei/Awesome-Biomolecule-Language-Cross-Modeling?style=social&label=Code+Stars)](https://github.com/QizhiPei/Awesome-Biomolecule-Language-Cross-Modeling)
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2023</div><img src='images/gpt_alter_survey.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -73,6 +94,7 @@ Kaiyuan Gao, Sunan He, Zhenyu He, Jiacheng Lin, **Qizhi Pei**, Jie Shao, Wei Zha
 </div>
 
 # 🎖 Honors and Awards
+- *2023* Doctoral Scholarship for Elite Innovative Talents of Renmin University of China (中国人民大学拔尖创新人才).
 - *2022*, Excellent Graduation Thesis, USTC.
 - *2022*, Outstanding Undergraduate Awards, USTC.
 - *2018~2021*, Outstanding Student Scholarship, USTC.
