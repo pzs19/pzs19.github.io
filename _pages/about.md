@@ -30,7 +30,7 @@ His researches focus on natural language processing and efficient LLM.
 
 # 🔥 News
 - *2024.03*: &nbsp; One paper about efficient LLM was submitted to [Arxiv](https://arxiv.org/abs/2403.12968).
-- *2023.11*: &nbsp; One paper was submitted to [Arxiv](https://arxiv.org/abs/2311.02373)!
+- *2023.11*: &nbsp; One paper about data poisoning on Diffusion Models was submitted to [Arxiv](https://arxiv.org/abs/2311.02373).
 - *2023.10*: &nbsp;🎉🎉 One paper accepted by [NeurIPS 2023 Workshop on BUGS](https://nips.cc/virtual/2023/77108). Thanks for all collaborators!
 
 # 📝 Publications
