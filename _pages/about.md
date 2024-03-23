@@ -57,7 +57,7 @@ His researches focus on natural language processing and efficient LLM.
 </div>
 
 # 🎖 Honors and Awards
-- *2020~2022*, Academic Excellence Scholarship(Dec 2020, Dec 2021, Dec 2022), Freshman Scholarship(Dec 2019), THU.
+- *2020~2022*, Academic Excellence Scholarship, THU.
 - *2019*, Freshman Scholarship, THU. 
 
 # 📖 Educations
