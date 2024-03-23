@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Qizhi Pei"
-description              : "Qizhi Pei's Homepage"
-repository               : "QizhiPei/QizhiPei.github.io"
+title                    : "Zhuoshi Pan"
+description              : "Zhuoshi Pan's Homepage"
+repository               : "pzs19/pzs19.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -21,15 +21,15 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Qizhi Pei"
-  avatar           : "images/profile_pqz.png"
-  bio              : "Renmin University of China"
+  name             : "Zhuoshi Pan"
+  avatar           : "images/profile_pzs.png"
+  bio              : "Tsinghua University"
   location         : "Beijing, China"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=sf3xGU8AAAAJ"
-  email            : "pqz1811@gmail.com"
-  researchgate     : "https://www.researchgate.net/profile/Qizhi-Pei"
+  # googlescholar    : "https://scholar.google.com/citations?user=sf3xGU8AAAAJ"
+  email            : "zhuoshipan19@gmail.com"
+  # researchgate     : "https://www.researchgate.net/profile/Qizhi-Pei"
   uri              :
   bitbucket        :
   codepen          :
@@ -37,15 +37,15 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "QizhiPei"
+  github           : "pzs19"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "启智-裴-680192218"
-  dblp             : "https://dblp.org/pid/322/9716.html"
-  orcid            : "https://orcid.org/0000-0002-7242-422X"
+  # linkedin         : "启智-裴-680192218"
+  # dblp             : "https://dblp.org/pid/322/9716.html"
+  # orcid            : "https://orcid.org/0000-0002-7242-422X"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
