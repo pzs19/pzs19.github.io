@@ -19,7 +19,7 @@ redirect_from:
 
 Zhuoshi Pan (盘卓实 in Chinese) is currently a graduate student at [School of Information Science and Technology (SIST)](https://www.sist.tsinghua.edu.cn/) in [Tsinghua University (THU)](https://www.tsinghua.edu.cn/), supervised by [Prof. H. Vicky Zhao](https://ieeexplore.ieee.org/author/37294624300). He got the B.E. degree from [School of Information Science and Technology (SIST)](https://www.sist.tsinghua.edu.cn/), [Tsinghua University (THU)](https://www.tsinghua.edu.cn/) in 2023. 
 
-He currently is an intern of [Microsoft DKI Group](https://www.microsoft.com/en-us/research/group/data-knowledge-intelligence/). He is very fortunate to be mentored by [Dr. Qianhui Wu](https://www.microsoft.com/en-us/research/people/qianhuiwu/). He also works closely with [Huiqiang Jiang](https://www.microsoft.com/en-us/research/people/hjiang/).
+He currently is an intern of [Microsoft DKI Group](https://www.microsoft.com/en-us/research/group/data-knowledge-intelligence/), where he is very fortunate to be mentored by [Dr. Qianhui Wu](https://www.microsoft.com/en-us/research/people/qianhuiwu/). He also works closely with [Huiqiang Jiang](https://www.microsoft.com/en-us/research/people/hjiang/).
 
 His researches focus on natural language processing and efficient LLM. 
 
