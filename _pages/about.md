@@ -40,9 +40,7 @@ His researches focus on natural language processing and efficient LLM.
 [LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression](https://arxiv.org/abs/2403.12968) \\
 **Zhuoshi Pan**, Qianhui Wu, Huiqiang Jiang, Menglin Xia, Xufang Luo, Jue Zhang, Qingwei Lin, Victor Rühle, Yuqing Yang, Chin-Yew Lin, H. Vicky Zhao, Lili Qiu, Dongmei Zhang
 
-<!-- [**Project**](https://llmlingua.com/llmlingua2.html) \| [![](https://img.shields.io/github/stars/QizhiPei/FABind?style=social&label=Code)](https://github.com/microsoft/LLMLingua/) \| [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Model)](https://huggingface.co/spaces/microsoft/llmlingua-2) -->
-
-[**Project**](https://llmlingua.com/llmlingua2.html) \| [![](https://img.shields.io/github/stars/QizhiPei/FABind?style=social&label=Code+Stars)](https://github.com/microsoft/LLMLingua/) \| [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Model)](https://huggingface.co/spaces/microsoft/llmlingua-2)
+[**Project**](https://llmlingua.com/llmlingua2.html) \| [![](https://img.shields.io/github/stars/microsoft/LLMLingua?style=social&label=Code+Stars)](https://github.com/microsoft/LLMLingua/) \| [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Model)](https://huggingface.co/spaces/microsoft/llmlingua-2)
 
 </div>
 </div>
@@ -53,7 +51,7 @@ His researches focus on natural language processing and efficient LLM.
 [From Trojan Horses to Castle Walls: Unveiling Bilateral Backdoor Effects in Diffusion Models](https://arxiv.org/abs/2311.02373) \\
 **Zhuoshi Pan**(co-first author), Yuguang Yao, Gaowen Liu, Bingquan Shen, H. Vicky Zhao, Ramana Rao Kompella, Sijia Liu
 
-[**Project**](https://github.com/OPTML-Group/BiBadDiff) \| [![](https://img.shields.io/github/stars/QizhiPei/BioT5?style=social&label=Code+Stars)](https://github.com/OPTML-Group/BiBadDiff) 
+[**Project**](https://github.com/OPTML-Group/BiBadDiff) \| [![](https://img.shields.io/github/stars/OPTML-Group/BiBadDiff?style=social&label=Code+Stars)](https://github.com/OPTML-Group/BiBadDiff) 
 </div>
 </div>
 
