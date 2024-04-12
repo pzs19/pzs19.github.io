@@ -67,6 +67,6 @@ His researches focus on natural language processing and efficient LLM.
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
-# 💻 Internships
+<!-- # 💻 Internships
 - *2023.12 - Now*, [Microsoft DKI Group](https://www.microsoft.com/en-us/research/group/data-knowledge-intelligence/), Beijing, China.
-- *2022.06 - 2022.10*, [XiaoIce Company](https://xiaoice.com/), Beijing, China.
+- *2022.06 - 2022.10*, [XiaoIce Company](https://xiaoice.com/), Beijing, China. -->
