@@ -40,7 +40,7 @@ His researches focus on natural language processing and efficient LLM.
 [TokenSelect: Efficient Long-Context Inference and Length Extrapolation for LLMs via Dynamic Token-Level KV Cache Selection](https://arxiv.org/abs/2411.02886) \| [EMNLP'25 Main] \\
 Wei Wu, **Zhuoshi Pan** (co-first author), Chao Wang, Liyi Chen, Yunchu Bai, Tianfu Wang, Kun Fu, Zheng Wang, Hui Xiong
 
-[![](https://img.shields.io/github/stars/microsoft/SeCom?style=social&label=Code+Stars)](https://github.com/pzs19/TokenSelect)
+[![](https://img.shields.io/github/stars/pzs19/TokenSelect?style=social&label=Code+Stars)](https://github.com/pzs19/TokenSelect)
 
 </div>
 </div>
