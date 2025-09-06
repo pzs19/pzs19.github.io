@@ -25,12 +25,12 @@ His researches focus on natural language processing and efficient LLM.
 
 
 # 🔥 News
-- *2025.08*: &nbsp; One paper about efficient LLM inference was accepted by EMNLP'25 [Paper](https://arxiv.org/abs/2411.02886)|[Code](https://github.com/pzs19/TokenSelect). Thanks for the first author [Wei Wu](https://scholar.google.com/citations?user=0aDsRecAAAAJ&hl=en)!
-- *2025.03*: &nbsp; One paper about LLM financial data synthesis was accepted by ACL'25 Main [Paper](https://aclanthology.org/2025.acl-long.495/)\|[Code](https://github.com/pzs19/InvestAlign). Thanks for the first author [Huisheng Wang](https://openreview.net/profile?id=~Huisheng_Wang2)!
-- *2025.03*: &nbsp; One paper about LLM reasoning data synthesis was accepted by ACL'25 Findings [Paper](https://arxiv.org/abs/2502.05589)|[Code](https://github.com/pzs19/LEMMA). Thanks for all collaborators!
-- *2025.01*: &nbsp; One paper about efficient conversation agent was accepted by ICLR'25 [Paper](https://arxiv.org/abs/2502.05589)|[Code](https://github.com/microsoft/SeCom). Thanks for all collaborators!
-- *2024.12*: &nbsp; One paper about backdoor attack was accepted by NeurIPS'24 [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/95dcc1f6463491d37a8918c1d38380a7-Abstract-Conference.html)|[Code](https://github.com/OPTML-Group/BiBadDiff). Thanks for all collaborators!
-- *2024.03*: &nbsp; LLMLingua-2 was accepted by ACL'24 Findings [Paper](https://aclanthology.org/2024.findings-acl.57/)|[Code](https://github.com/microsoft/LLMLingua/)|[Demo](https://huggingface.co/spaces/microsoft/llmlingua-2). Thanks for all collaborators!
+- *2025.08*: &nbsp; One paper about efficient LLM inference was accepted by EMNLP'25 [Paper](https://arxiv.org/abs/2411.02886)\|[Code](https://github.com/pzs19/TokenSelect). Thanks for the first author [Wei Wu](https://scholar.google.com/citations?user=0aDsRecAAAAJ&hl=en)!
+- *2025.03*: &nbsp; One paper about LLM financial data synthesis was accepted by ACL'25 Main [Paper](https://aclanthology.org/2025.acl-long.495/)\\|[Code](https://github.com/pzs19/InvestAlign). Thanks for the first author [Huisheng Wang](https://openreview.net/profile?id=~Huisheng_Wang2)!
+- *2025.03*: &nbsp; One paper about LLM reasoning data synthesis was accepted by ACL'25 Findings [Paper](https://arxiv.org/abs/2502.05589)\|[Code](https://github.com/pzs19/LEMMA). Thanks for all collaborators!
+- *2025.01*: &nbsp; One paper about efficient conversation agent was accepted by ICLR'25 [Paper](https://arxiv.org/abs/2502.05589)\|[Code](https://github.com/microsoft/SeCom). Thanks for all collaborators!
+- *2024.12*: &nbsp; One paper about backdoor attack was accepted by NeurIPS'24 [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/95dcc1f6463491d37a8918c1d38380a7-Abstract-Conference.html)\|[Code](https://github.com/OPTML-Group/BiBadDiff). Thanks for all collaborators!
+- *2024.03*: &nbsp; LLMLingua-2 was accepted by ACL'24 Findings [Paper](https://aclanthology.org/2024.findings-acl.57/)\|[Code](https://github.com/microsoft/LLMLingua/)\|[Demo](https://huggingface.co/spaces/microsoft/llmlingua-2). Thanks for all collaborators!
 
 # 📝 Publications
 
