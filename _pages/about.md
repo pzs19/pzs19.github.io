@@ -23,17 +23,32 @@ Zhuoshi Pan (盘卓实 in Chinese) is currently a graduate student at [School of
 
 His researches focus on natural language processing and efficient LLM. 
 
-<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat. -->
-
-<!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
-
 
 # 🔥 News
-- *2024.03*: &nbsp; One paper about efficient LLM was submitted to [Arxiv](https://arxiv.org/abs/2403.12968).
+- *2025.08*: &nbsp; One paper about efficient LLM inference was accepted by EMNLP'25 [Paper](https://arxiv.org/abs/2411.02886)|[Code](https://github.com/pzs19/TokenSelect). Thanks for the first author [Wei Wu](https://scholar.google.com/citations?user=0aDsRecAAAAJ&hl=en)!
+- *2025.03*: &nbsp; One paper about LLM financial data synthesis was accepted by ACL'25 Main [Paper](https://aclanthology.org/2025.acl-long.495/)|[Code](https://github.com/pzs19/InvestAlign). Thanks for the first author [Huisheng Wang](https://openreview.net/profile?id=~Huisheng_Wang2)!
+- *2025.03*: &nbsp; One paper about LLM reasoning data synthesis was accepted by ACL'25 Findings [Paper](https://arxiv.org/abs/2502.05589)|[Code](https://github.com/pzs19/LEMMA). Thanks for all collaborators!
+- *2025.01*: &nbsp; One paper about efficient conversation agent was accepted by ICLR'25 [Paper](https://arxiv.org/abs/2502.05589)|[Code](https://github.com/microsoft/SeCom). Thanks for all collaborators!
+- *2024.12*: &nbsp; One paper about backdoor attack was accepted by NeurIPS'24 [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/95dcc1f6463491d37a8918c1d38380a7-Abstract-Conference.html)|[Code](https://github.com/OPTML-Group/BiBadDiff). Thanks for all collaborators!
+- *2024.03*: &nbsp; LLMLingua-2 was accepted by ACL'24 Findings [Paper](https://aclanthology.org/2024.findings-acl.57/)|[Code](https://github.com/microsoft/LLMLingua/)|[Demo](https://huggingface.co/spaces/microsoft/llmlingua-2). Thanks for all collaborators!
+<!-- 
+- *2024.03*: &nbsp; One paper about prompt compression was submitted to [Arxiv](https://arxiv.org/abs/2403.12968).
 - *2023.11*: &nbsp; One paper about data poisoning on Diffusion Models was submitted to [Arxiv](https://arxiv.org/abs/2311.02373).
-- *2023.10*: &nbsp;🎉🎉 One paper accepted by [NeurIPS 2023 Workshop on BUGS](https://nips.cc/virtual/2023/77108). Thanks for all collaborators!
+- *2023.10*: &nbsp;🎉🎉 One paper accepted by [NeurIPS 2023 Workshop on BUGS](https://nips.cc/virtual/2023/77108). Thanks for all collaborators! -->
 
 # 📝 Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/secom.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Secom: On memory construction and retrieval for personalized conversational agents](https://arxiv.org/abs/2502.05589) \\
+**Zhuoshi Pan**, Qianhui Wu, Huiqiang Jiang, Xufang Luo, Hao Cheng, Dongsheng Li, Yuqing Yang, Chin-Yew Lin, H Vicky Zhao, Lili Qiu, Jianfeng Gao
+
+[**Project**](https://www.microsoft.com/en-us/research/project/secom/) \| [![](https://img.shields.io/github/stars/microsoft/SeCom?style=social&label=Code+Stars)](https://github.com/microsoft/SeCom)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/LLMLingua-2.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -49,19 +64,20 @@ His researches focus on natural language processing and efficient LLM.
 <div class='paper-box-text' markdown="1">
 
 [From Trojan Horses to Castle Walls: Unveiling Bilateral Backdoor Effects in Diffusion Models](https://arxiv.org/abs/2311.02373) \\
-**Zhuoshi Pan**(co-first author), Yuguang Yao, Gaowen Liu, Bingquan Shen, H. Vicky Zhao, Ramana Rao Kompella, Sijia Liu
+**Zhuoshi Pan**(co-first author), Yuguang Yao(co-first author), Gaowen Liu, Bingquan Shen, H. Vicky Zhao, Ramana Rao Kompella, Sijia Liu
 
 [**Project**](https://github.com/OPTML-Group/BiBadDiff) \| [![](https://img.shields.io/github/stars/OPTML-Group/BiBadDiff?style=social&label=Code+Stars)](https://github.com/OPTML-Group/BiBadDiff) 
 </div>
 </div>
 
 # 🎖 Honors and Awards
+- *2024*, First-Class Overall Excellence Award, THU.
 - *2020~2022*, Academic Excellence Scholarship, THU.
 - *2019*, Freshman Scholarship, THU. 
 
 # 📖 Educations
-- *2023.09 - Now*, graduate student in the School of Information Science and Technology (SIST), Tsinghua University (THU).
-- *2019.09 - 2023.06*, undergraduate student in the School of Information Science and Technology (SIST), Tsinghua University (THU).
+- *2023.09 - Now*, Graduate student in the School of Information Science and Technology (SIST), Tsinghua University (THU).
+- *2019.09 - 2023.06*, Undergraduate student in the School of Information Science and Technology (SIST), Tsinghua University (THU).
 
 <!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
