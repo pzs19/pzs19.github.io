@@ -26,18 +26,40 @@ His researches focus on natural language processing and efficient LLM.
 
 # 🔥 News
 - *2025.08*: &nbsp; One paper about efficient LLM inference was accepted by EMNLP'25 [Paper](https://arxiv.org/abs/2411.02886)\|[Code](https://github.com/pzs19/TokenSelect). Thanks for the first author [Wei Wu](https://scholar.google.com/citations?user=0aDsRecAAAAJ&hl=en)!
-- *2025.03*: &nbsp; One paper about LLM financial data synthesis was accepted by ACL'25 Main [Paper](https://aclanthology.org/2025.acl-long.495/)\\|[Code](https://github.com/pzs19/InvestAlign). Thanks for the first author [Huisheng Wang](https://openreview.net/profile?id=~Huisheng_Wang2)!
-- *2025.03*: &nbsp; One paper about LLM reasoning data synthesis was accepted by ACL'25 Findings [Paper](https://arxiv.org/abs/2502.05589)\|[Code](https://github.com/pzs19/LEMMA). Thanks for all collaborators!
+- *2025.03*: &nbsp; One paper about LLM financial data synthesis was accepted by ACL'25 Main [Paper](https://aclanthology.org/2025.acl-long.495/)\|[Code](https://github.com/pzs19/InvestAlign). Thanks for the first author [Huisheng Wang](https://openreview.net/profile?id=~Huisheng_Wang2)!
+- *2025.03*: &nbsp; One paper about LLM reasoning data synthesis was accepted by ACL'25 Findings [Paper](https://aclanthology.org/2025.findings-acl.605/)\|[Code](https://github.com/pzs19/LEMMA). Thanks for all collaborators!
 - *2025.01*: &nbsp; One paper about efficient conversation agent was accepted by ICLR'25 [Paper](https://arxiv.org/abs/2502.05589)\|[Code](https://github.com/microsoft/SeCom). Thanks for all collaborators!
 - *2024.12*: &nbsp; One paper about backdoor attack was accepted by NeurIPS'24 [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/95dcc1f6463491d37a8918c1d38380a7-Abstract-Conference.html)\|[Code](https://github.com/OPTML-Group/BiBadDiff). Thanks for all collaborators!
 - *2024.03*: &nbsp; LLMLingua-2 was accepted by ACL'24 Findings [Paper](https://aclanthology.org/2024.findings-acl.57/)\|[Code](https://github.com/microsoft/LLMLingua/)\|[Demo](https://huggingface.co/spaces/microsoft/llmlingua-2). Thanks for all collaborators!
 
 # 📝 Publications
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/TokenSelect.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[TokenSelect: Efficient Long-Context Inference and Length Extrapolation for LLMs via Dynamic Token-Level KV Cache Selection](https://arxiv.org/abs/2411.02886) \| [EMNLP'25 Main] \\
+Wei Wu, **Zhuoshi Pan** (co-first author), Chao Wang, Liyi Chen, Yunchu Bai, Tianfu Wang, Kun Fu, Zheng Wang, Hui Xiong
+
+[![](https://img.shields.io/github/stars/microsoft/SeCom?style=social&label=Code+Stars)](https://github.com/pzs19/TokenSelect)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/lemma.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[LEMMA: Learning from Errors for MatheMatical Advancement in LLMs](https://arxiv.org/abs/2503.17439) \| [ACL'25 Finding] \\
+**Zhuoshi Pan**, Yu Li, Honglin Lin, Qizhi Pei, Zinan Tang, Wei Wu, Chenlin Ming, H. Vicky Zhao, Conghui He, Lijun Wu
+
+[![](https://img.shields.io/github/stars/pzs19/LEMMA?style=social&label=Code+Stars)](https://github.com/pzs19/LEMMA) \| [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Model)](https://huggingface.co/collections/panzs19/lemma-68620ced6bedc62fff843e43)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/secom.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Secom: On memory construction and retrieval for personalized conversational agents](https://arxiv.org/abs/2502.05589) \\
+[Secom: On memory construction and retrieval for personalized conversational agents](https://arxiv.org/abs/2502.05589) \| [ICLR'25] \\
 **Zhuoshi Pan**, Qianhui Wu, Huiqiang Jiang, Xufang Luo, Hao Cheng, Dongsheng Li, Yuqing Yang, Chin-Yew Lin, H Vicky Zhao, Lili Qiu, Jianfeng Gao
 
 [**Project**](https://www.microsoft.com/en-us/research/project/secom/) \| [![](https://img.shields.io/github/stars/microsoft/SeCom?style=social&label=Code+Stars)](https://github.com/microsoft/SeCom)
@@ -48,7 +70,7 @@ His researches focus on natural language processing and efficient LLM.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/LLMLingua-2.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression](https://arxiv.org/abs/2403.12968) \\
+[LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression](https://arxiv.org/abs/2403.12968) \| [ACL'24 Finding] \\
 **Zhuoshi Pan**, Qianhui Wu, Huiqiang Jiang, Menglin Xia, Xufang Luo, Jue Zhang, Qingwei Lin, Victor Rühle, Yuqing Yang, Chin-Yew Lin, H. Vicky Zhao, Lili Qiu, Dongmei Zhang
 
 [**Project**](https://llmlingua.com/llmlingua2.html) \| [![](https://img.shields.io/github/stars/microsoft/LLMLingua?style=social&label=Code+Stars)](https://github.com/microsoft/LLMLingua/) \| [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Model)](https://huggingface.co/spaces/microsoft/llmlingua-2)
@@ -59,8 +81,8 @@ His researches focus on natural language processing and efficient LLM.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"> </div><img src='images/BiBadDiff.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[From Trojan Horses to Castle Walls: Unveiling Bilateral Backdoor Effects in Diffusion Models](https://arxiv.org/abs/2311.02373) \\
-**Zhuoshi Pan**(co-first author), Yuguang Yao(co-first author), Gaowen Liu, Bingquan Shen, H. Vicky Zhao, Ramana Rao Kompella, Sijia Liu
+[From Trojan Horses to Castle Walls: Unveiling Bilateral Backdoor Effects in Diffusion Models](https://arxiv.org/abs/2311.02373) \| [NeurIPS'24] \\
+**Zhuoshi Pan**, Yuguang Yao (co-first author), Gaowen Liu, Bingquan Shen, H. Vicky Zhao, Ramana Rao Kompella, Sijia Liu
 
 [**Project**](https://github.com/OPTML-Group/BiBadDiff) \| [![](https://img.shields.io/github/stars/OPTML-Group/BiBadDiff?style=social&label=Code+Stars)](https://github.com/OPTML-Group/BiBadDiff) 
 </div>
