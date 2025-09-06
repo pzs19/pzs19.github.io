@@ -21,7 +21,7 @@ Zhuoshi Pan (盘卓实 in Chinese) is currently a graduate student at [School of
 
 <!-- He currently is an intern of [Microsoft DKI Group](https://www.microsoft.com/en-us/research/group/data-knowledge-intelligence/), where he is very fortunate to be mentored by [Dr. Qianhui Wu](https://www.microsoft.com/en-us/research/people/qianhuiwu/). He also works closely with [Huiqiang Jiang](https://www.microsoft.com/en-us/research/people/hjiang/). -->
 
-His researches focus on natural language processing and efficient LLM. 
+His researches focus on inference efficiency and data efficiency for LLM. 
 
 
 # 🔥 News
