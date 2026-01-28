@@ -62,7 +62,7 @@ Yu Li, **Zhuoshi Pan** (co-first author), Honglin Lin, Mengyuan Sun, Conghui He,
 [REST: Stress Testing Large Reasoning Models by Asking Multiple Problems at Once](https://arxiv.org/abs/2507.10541v1) \| [Under Review] \\
 **Zhuoshi Pan**, Qizhi Pei, Yu Li, Qiyao Sun, Zinan Tang, H. Vicky Zhao, Conghui He, Lijun Wu
 
-[![](https://img.shields.io/github/stars/opendatalab/REST?style=social&label=Code+Stars)](https://github.com/opendatalab/REST)
+[![](https://img.shields.io/github/stars/opendatalab/REST?style=social&label=Code+Stars)](https://github.com/opendatalab/REST) \| [![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://opendatalab.github.io/REST/)
 
 </div>
 </div>
