@@ -34,6 +34,17 @@ His researches focus on LLM data synthesis, especially for math and agent domain
 
 # 📝 Publications
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/ScaleDiff.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[ScaleDiff: Scaling Difficult Problems for Advanced Mathematical Reasoning](https://arxiv.org/abs/2509.21070) \| [Under Review] \\
+Qizhi Pei, **Zhuoshi Pan** (co-first author), Honglin Lin, Xin Gao, Yu Li, Zinan Tang, Conghui He, Rui Yan, Lijun Wu
+
+[![](https://img.shields.io/github/stars/QizhiPei/ScaleDiff?style=social&label=Code+Stars)](https://github.com/QizhiPei/ScaleDiff) \| [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Model)](https://huggingface.co/collections/QizhiPei/scalediff)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/RLVR-Data.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -48,7 +59,7 @@ Yu Li, **Zhuoshi Pan** (co-first author), Honglin Lin, Mengyuan Sun, Conghui He,
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/REST.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[REST: Stress Testing Large Reasoning Models by Asking Multiple Problems at Once](https://arxiv.org/abs/2507.17512) \| [Under Review] \\
+[REST: Stress Testing Large Reasoning Models by Asking Multiple Problems at Once](https://arxiv.org/abs/2507.10541v1) \| [Under Review] \\
 **Zhuoshi Pan**, Qizhi Pei, Yu Li, Qiyao Sun, Zinan Tang, H. Vicky Zhao, Conghui He, Lijun Wu
 
 [![](https://img.shields.io/github/stars/opendatalab/REST?style=social&label=Code+Stars)](https://github.com/opendatalab/REST)
