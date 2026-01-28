@@ -21,11 +21,11 @@ Zhuoshi Pan (盘卓实 in Chinese) is currently a graduate student at [School of
 
 <!-- He currently is an intern of [Microsoft DKI Group](https://www.microsoft.com/en-us/research/group/data-knowledge-intelligence/), where he is very fortunate to be mentored by [Dr. Qianhui Wu](https://www.microsoft.com/en-us/research/people/qianhuiwu/). He also works closely with [Huiqiang Jiang](https://www.microsoft.com/en-us/research/people/hjiang/). -->
 
-His researches focus on inference efficiency and data efficiency for LLM. 
-
+His researches focus on LLM data synthesis, especially for math and agent domain.
+<!-- inference efficiency and data efficiency for LLM.  -->
 
 # 🔥 News
-- *2025.08*: &nbsp; One paper about efficient LLM inference was accepted by EMNLP'25 [Paper](https://arxiv.org/abs/2411.02886)\|[Code](https://github.com/pzs19/TokenSelect). Thanks for the first author [Wei Wu](https://scholar.google.com/citations?user=0aDsRecAAAAJ&hl=en)!
+<!-- - *2025.08*: &nbsp; One paper about efficient LLM inference was accepted by EMNLP'25 [Paper](https://arxiv.org/abs/2411.02886)\|[Code](https://github.com/pzs19/TokenSelect). Thanks for the first author [Wei Wu](https://scholar.google.com/citations?user=0aDsRecAAAAJ&hl=en)! -->
 - *2025.03*: &nbsp; One paper about LLM financial data synthesis was accepted by ACL'25 Main [Paper](https://aclanthology.org/2025.acl-long.495/)\|[Code](https://github.com/pzs19/InvestAlign). Thanks for the first author [Huisheng Wang](https://openreview.net/profile?id=~Huisheng_Wang2)!
 - *2025.03*: &nbsp; One paper about LLM reasoning data synthesis was accepted by ACL'25 Findings [Paper](https://aclanthology.org/2025.findings-acl.605/)\|[Code](https://github.com/pzs19/LEMMA). Thanks for all collaborators!
 - *2025.01*: &nbsp; One paper about efficient conversation agent was accepted by ICLR'25 [Paper](https://arxiv.org/abs/2502.05589)\|[Code](https://github.com/microsoft/SeCom). Thanks for all collaborators!
@@ -34,13 +34,24 @@ His researches focus on inference efficiency and data efficiency for LLM.
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/TokenSelect.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/RLVR-Data.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[TokenSelect: Efficient Long-Context Inference and Length Extrapolation for LLMs via Dynamic Token-Level KV Cache Selection](https://arxiv.org/abs/2411.02886) \| [EMNLP'25 Main] \\
-Wei Wu, **Zhuoshi Pan** (co-first author), Chao Wang, Liyi Chen, Yunchu Bai, Tianfu Wang, Kun Fu, Zheng Wang, Hui Xiong
+[Can One Domain Help Others? A Data-Centric Study on Multi-Domain Reasoning via Reinforcement Learning](https://arxiv.org/abs/2507.17512) \| [Under Review] \\
+Yu Li, **Zhuoshi Pan** (co-first author), Honglin Lin, Mengyuan Sun, Conghui He, Lijun Wu 
 
-[![](https://img.shields.io/github/stars/pzs19/TokenSelect?style=social&label=Code+Stars)](https://github.com/pzs19/TokenSelect)
+[![](https://img.shields.io/github/stars/Leey21/A-Data-Centric-Study?style=social&label=Code+Stars)](https://github.com/Leey21/A-Data-Centric-Study)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/REST.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[REST: Stress Testing Large Reasoning Models by Asking Multiple Problems at Once](https://arxiv.org/abs/2507.17512) \| [Under Review] \\
+**Zhuoshi Pan**, Qizhi Pei, Yu Li, Qiyao Sun, Zinan Tang, H. Vicky Zhao, Conghui He, Lijun Wu
+
+[![](https://img.shields.io/github/stars/opendatalab/REST?style=social&label=Code+Stars)](https://github.com/opendatalab/REST)
 
 </div>
 </div>
@@ -78,6 +89,17 @@ Wei Wu, **Zhuoshi Pan** (co-first author), Chao Wang, Liyi Chen, Yunchu Bai, Tia
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/TokenSelect.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[TokenSelect: Efficient Long-Context Inference and Length Extrapolation for LLMs via Dynamic Token-Level KV Cache Selection](https://arxiv.org/abs/2411.02886) \| [EMNLP'25 Main] \\
+Wei Wu, **Zhuoshi Pan** (co-first author), Chao Wang, Liyi Chen, Yunchu Bai, Tianfu Wang, Kun Fu, Zheng Wang, Hui Xiong
+
+[![](https://img.shields.io/github/stars/pzs19/TokenSelect?style=social&label=Code+Stars)](https://github.com/pzs19/TokenSelect)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"> </div><img src='images/BiBadDiff.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -89,6 +111,7 @@ Wei Wu, **Zhuoshi Pan** (co-first author), Chao Wang, Liyi Chen, Yunchu Bai, Tia
 </div>
 
 # 🎖 Honors and Awards
+- *2025*, First-Class Overall Excellence Award, THU.
 - *2024*, First-Class Overall Excellence Award, THU.
 - *2020~2022*, Academic Excellence Scholarship, THU.
 - *2019*, Freshman Scholarship, THU. 
